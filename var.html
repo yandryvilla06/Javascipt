@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       a=2
+       var b=1
+       console.log(a)
+       // Como podemos ver C al ser declara internamente no nos la muestra ya que no es global
+
+    //    console.log("Te muestro c que es var interna de ffuncion"+c)
+
+
+     //El metodo one tiene variables globales como a y b por eso nos permite la suma dentro de la funcion one
+
+
+     //Usaremos let dentro de funciones a difencia de var que puede ser global o local .Let es una variable de bloque , si por ejemplo tenemos un var declarado 
+     // y este es un contador este se actualizaria dentro de un bloque y fuera de esa funcion tendria el mismo valor.
+     //Eso no sucederia con Let ya que dicho contenedor se actualizaria dentro de la funcion pero fuera de ella no  tendria ese valor correspondiente algo malo 
+       one()
+
+       function one(){
+          c=10
+          d=12
+          console.log(a+b+c+d)
+
+       }
+
+    </script>
+</head>
+<body>
+    <h1>Var</h1>
+    
+</body>
+</html>
