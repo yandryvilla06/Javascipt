@@ -45,6 +45,73 @@
 			 } 
 			 
 		}
+
+		function ejercicio3(){
+ 
+           let n2=parseFloat(document.getElementById("n2").value,2)
+
+		   let n3=parseFloat(document.getElementById("n3").value,2)
+		
+		   let op=document.getElementById("oper").value
+
+		   let operaciones=new Array("+","/","*","-")
+		   
+		   
+
+		   let resultado=0
+
+		   if(isNaN(n2)|| isNaN(n3)){
+			   alert("ERROR NO ES NUMERO")
+		   }
+
+		   if(operaciones.includes(op)){
+			
+			 switch(op){
+
+				case "+":
+
+				 	 resultado=n2+n3
+					 
+					 document.getElementById("res").value=resultado
+					 break;
+					
+                case "-":
+					resultado=n2-n3
+					document.getElementById("res").value=resultado
+					 break;
+					
+				case "/":
+					if(n2>n3){
+						resultado=parseFloat(n2/n3) 
+						document.getElementById("res").value=resultado
+						break
+					}else{
+						resultado=parseFloat(n3/n2) 
+						document.getElementById("res").value=resultado
+						break
+					}
+
+					
+
+				case "*":
+					resultado=n2*n3
+					document.getElementById("res").value=resultado
+					break
+					
+              
+			 
+			   
+			 }
+			 
+
+		   }else{
+
+			 	console.log("Operacion no existe")
+
+		   } 
+
+
+		}
 		
 	</script>
 

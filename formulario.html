@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        function validar(){
+    
+           var nombre=document.getElementById("nombre").value
+           var apellido=document.getElementById("apellido").value
+           var tel=document.getElementById("tel").value
+           
+       
+           var formi=document.querySelectorAll('input.campo')
+
+
+           for(elemento of formi){
+
+               if(elemento.value.length==0){
+                   elemento.focus()
+                   alert("Esta vacio rrellenelo")
+               }
+           }
+
+           if(!isNaN(nombre)){
+                alert("error nombre  es un numero")
+           }
+
+           if(!isNaN(apellido)){
+                alert("error apellido  es un numero")
+           }
+
+
+           if(isNaN(tel)){
+               alert("erro telefono no es numero")
+           }
+
+
+    
+    
+    
+             
+    
+        }
+    
+    
+        </script>
+</head>
+<body>
+
+    <h1>Formulario</h1>
+
+    <form name="formu">
+        <label>Nombre</label>
+        <input type="text" class="campo" name="nombre" id="nombre">
+        <label>Apellido</label>
+        <input type="text" class="campo" name="apellido" id="apellido">
+        <label>Telefono</label>
+        <input type="tel"  class="campo"name="telefono" id="tel"> 
+        <br>
+        <input type="button" value="Comprobar" onclick="validar()">
+    
+    </form>
+    
+</body>
+
+</html>

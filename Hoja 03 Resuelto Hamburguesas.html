@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Pedidos HAMBURGUESAS PEPE'S </title>
+<style type="text/css">
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:Impact, Charcoal, sans-serif;
+    color: #222;
+ 
+}
+
+</style>
+<script type="text/javascript">
+
+   function calcular(){
+
+     
+     var tam=parseFloat(document.getElementById("tam").value)
+     var extra=document.getElementsByName("extras")
+     var pextra=0
+     var rprecio=" "
+     var total=0
+     var can=document.getElementsByName("cantidad")
+
+     for(var i=0;i<extra.length;i++){
+
+        if(extra[i].checked==true){
+             pextra+=parseFloat(extra[i].value)
+        }
+     }
+
+     for(var n=0;n<can.length;n++){
+     
+        if(can[n].checked==true){
+             rprecio=can[n].value
+        }
+
+     }
+
+     console.log(pextra)
+     
+     total=(pextra+parseFloat(tam))*parseInt(rprecio)
+     document.getElementById("caja").value=total
+
+
+
+
+     
+
+
+
+     
+
+   }
+
+
+</script>
+</head>
+<body bgcolor = "#D8BFD8">
+
+
+<div align="center">
+<h1> HAMBURGUESAS PEPE'S </h1>  
+<img src="hamburguesa.jpg" width=300 height=210>
+<form name="miformulario">
+<br><br>
+
+Elige un tamaño: 
+<select id="tam">
+	<option value="0"> Selecciona </option>
+    <option value="2"> Pequeña </option>
+	<option value="3"> Mediana </option>
+	<option value="4"> Grande </option>
+	<option value="5"> Gigante </option>
+</select>
+<p>
+<p> Combinala con Patatas o Refresco </p>
+<input type="checkbox" name="extras" value="1"> Patatas
+<input type="checkbox" name="extras" value="1.5"> Refresco
+<br><br>
+¿Cuantas quieres? 
+    <br><br>
+    
+<input type="radio" name="cantidad" value="1"> 1
+<input type="radio" name="cantidad" value="2"> 2
+<input type="radio" name="cantidad" value="3"> 3
+<input type="radio" name="cantidad" value="4"> 4
+<input type="radio" name="cantidad" value="5"> 5
+ <br><br>
+<input type="button" value="CALCULAR PRECIO" onclick="calcular()">
+ <br><br>
+ PRECIO TOTAL 
+ <input type="text" size = "10" id="caja"> €
+ <br><br>
+ <div id="premio" style="display:none">
+ Introduce tu codigo postal, puedes obtener descuentos!!
+<input type="text" size = "10" id="postal" onchange="verpremio()">
+ </div>
+</form>
+</div>
+</body>
+</html>
