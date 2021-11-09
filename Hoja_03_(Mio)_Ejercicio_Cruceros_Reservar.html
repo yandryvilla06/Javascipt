@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cruceros Reserva</title>
+    <style type="text/css">
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 2em 2em 4em;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-family: Impact, Charcoal, sans-serif;
+            color: #222;
+
+        }
+    </style>
+    <script type="text/javascript">
+
+        function validar(){
+
+             var nombre=document.getElementById("name").value;
+              
+             var patron_name=/[a-b]$/;
+
+
+            if(!patron_name.test(nombre)){
+                alert("Solo mumeros")
+            }
+
+
+        }
+
+
+       
+    </script>
+</head>
+
+<body bgcolor="#81BEF7">
+
+    <div>
+        <h1> CRUCEROS ¡QUÉ TE HUNDES! </h1>
+        <img src="barco-hundido.jpg" width="300" height="210">
+
+        <form name="miformulario">
+
+            Datos personales
+            <p>
+                Nombre <input type="text" size="25" id ="name"> 
+                Apellidos <input type="text" size="25" id = "surname"> <br><br>
+                Teléfono <input type="text" size="15" id = "tel">
+                Correo <input type="text" size="40" id = "mail"> <br><br>
+
+            </p>
+            <input type="button" value="RESERVAR" onclick="validar()">
+
+        </form>
+</body>
+
+</html>
