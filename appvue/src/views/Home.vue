@@ -237,7 +237,7 @@
         <img
           class="mt-3 w-2/12 sm:w-2/12"
           src="../assets/icons/javascript.png"
-          alt="Sunset in the mountains"
+          alt="Sunset in the mountains s"
         />
       </div>
     </div>
