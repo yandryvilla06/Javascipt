@@ -165,8 +165,8 @@
         </p>
       </div>
 
-      <!--Skills-->
-      <div class="flex justify-between flex-wrap items-center">
+      <!--Skills podriamos poner flex-wrap en el div-->
+      <div class="flex justify-between  items-center"> 
         <div class="text-3xl md:text-5xl font-extrabold mx-12 mt-3">
           <span
             class="
@@ -237,7 +237,7 @@
         <img
           class="mt-3 w-2/12 sm:w-2/12"
           src="../assets/icons/javascript.png"
-          alt="Sunset in the mountains s"
+          alt="Sunset in the mountains"
         />
       </div>
     </div>
