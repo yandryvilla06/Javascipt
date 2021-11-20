@@ -176,7 +176,7 @@
               from-green-400
               to-blue-500
             "
-            >Habilidades
+            >Habilidadees
           </span>
           <ul class="list-disc list-inside m-12">
             <li class="text-white">Autodidacta</li>
