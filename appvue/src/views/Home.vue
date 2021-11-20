@@ -1,6 +1,6 @@
 <template>
   <!--Background image and title-->
-  
+    <div>
     <main class="px-3 sm:px-6 md:mt-16 lg:mt-20 lg:px-12 xl:mt-28">
       <div class="px-5 sm:text-center lg:text-center">
         <!--title-->
