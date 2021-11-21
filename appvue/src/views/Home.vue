@@ -1,7 +1,7 @@
 <template>
   <!--Background image and title-->
 
-  <main class="px-3 sm:px-6 md:mt-16 lg:mt-20 lg:px-12 xl:mt-28">
+  <main class="px-5 sm:px-6 md:mt-16 lg:mt-20 lg:px-14 xl:mt-28">
     <div class="px-5 sm:text-center lg:text-center">
       <!--title-->
       <h1
@@ -128,7 +128,7 @@
       </div>
     </div>
 
-    <div class="md:py-28 mt-3 md:px-24">
+    <div class="md:py-28 mt-3">
       <!--About me-->
       <div class="text-3xl md:text-5xl font-extrabold mx-12">
         <div class="flex flex-row justify-items-center items-center">
@@ -167,7 +167,7 @@
 
       <!--Skills podriamos poner flex-wrap en el div-->
       <div class="flex justify-between  items-center"> 
-        <div class="text-3xl md:text-5xl font-extrabold mx-12 mt-3">
+        <div class="text-3xl md:text-5xl font-extrabold mx-11 mt-3">
           <span
             class="
               bg-clip-text
@@ -176,7 +176,7 @@
               from-green-400
               to-blue-500
             "
-            >Habilidadees
+            >Habilidades
           </span>
           <ul class="list-disc list-inside m-12">
             <li class="text-white">Autodidacta</li>
@@ -206,45 +206,40 @@
           >Conocimientos
         </span>
       </div>
-
-      <div class="flex flex-row">
-        <img
-          class="flex flex-wrap w-2/12 sm:w-2/12"
-          src="../assets/icons/html.svg"
-          alt="Sunset in the mountains"
-        />
-
-        <img
-          class="mt-3 w-2/12 sm:w-2/12"
-          src="../assets/icons/mysql.png"
-          alt="Sunset in the mountains"
-        />
-        <img
-          class="mt-3 w-2/12 sm:w-2/12"
-          src="../assets/icons/css.svg"
-          alt="Sunset in the mountains"
-        />
-        <img
-          class="mt-3 w-2/12 sm:w-2/12"
-          src="../assets/icons/java.png"
-          alt="Sunset in the mountains"
-        />
-        <img
-          class="mt-3 w-2/12 sm:w-2/12"
-          src="../assets/icons/python.png"
-          alt="Sunset in the mountains"
-        />
-        <img
-          class="mt-3 w-2/12 sm:w-2/12"
-          src="../assets/icons/javascript.png"
-          alt="Sunset in the mountains"
-        />
-      </div>
+     
     </div>
+    <card-image/>
   </main>
+  
+    
+
+
+ 
+    
+  
+
+
 </template>
 
-<script></script>
+<script>
+ 
+ import CardImage from '@/components/Cardimage.vue'
+
+ export default{
+
+  name:"home",
+  components:{
+     CardImage
+  } 
+
+ }
+
+ 
+
+
+
+
+</script>
 
 <style scoped>
 .profesion {
