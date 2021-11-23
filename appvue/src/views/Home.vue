@@ -2,7 +2,7 @@
   <!--Background image and title-->
 
   <main class="px-5 sm:px-6 md:mt-16 lg:mt-20 lg:px-14 xl:mt-28">
-    <div class="px-5 sm:text-center lg:text-center">
+    <div class="sm:text-center lg:text-center">
       <!--title-->
       <h1
         class="
@@ -57,7 +57,7 @@
           font-bold
         "
       >
-        Creando aplicaciones bonitas y útiles
+        "Desarrollando paginas y apps fantasticas"
       </p>
 
       <div class="flex flex-wrap justify-center mx-auto mt-8">
@@ -99,12 +99,12 @@
               md:py-4 md:text-lg md:px-10
             "
           >
-            Acerca de mi
+          <router-link  to="/porfolio">Proyectos</router-link>
           </a>
         </div>
         <div class="mt-3 sm:mt-0 sm:ml-3">
           <a
-            href="#"
+            
             class="
               w-full
               flex
@@ -122,13 +122,12 @@
               md:py-4 md:text-lg md:px-10
             "
           >
-            Contacto
+          <router-link  to="/contact">Contacto</router-link>
           </a>
         </div>
       </div>
     </div>
 
-    <div class="md:py-28 mt-3">
       <!--About me-->
       <div class="text-3xl md:text-5xl font-extrabold mx-12">
         <div class="flex flex-row justify-items-center items-center">
@@ -140,7 +139,7 @@
               from-green-400
               to-blue-500
             "
-            >A cerca de mi </span
+            >Acerca de mi </span
           ><img
             class="mt-2 mx-3 w-8 sm:w-11"
             src="../assets/icons/icons8-metal-music-48.png"
@@ -189,7 +188,7 @@
           <img src="../assets/icons/Creativity(1).gif" alt="" />
         </div>
       </div>
-      <!--Languages-->
+   
       <div class="text-center">
         <span
           class="
@@ -203,15 +202,16 @@
             font-extrabold
             mx-12
           "
-          >Conocimientos
+          > Conocimientos
+          
         </span>
       </div>
-     
-    </div>
     <card-image/>
+    
+    
   </main>
   
-    
+ 
 
 
  
@@ -224,6 +224,7 @@
 <script>
  
  import CardImage from '@/components/Cardimage.vue'
+
 
  export default{
 
