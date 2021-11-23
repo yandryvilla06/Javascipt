@@ -206,11 +206,11 @@
           
         </span>
       </div>
-    <card-image/>
-    
+  
     
   </main>
-  
+  <card-image/>
+  <foot/>
  
 
 
@@ -224,13 +224,13 @@
 <script>
  
  import CardImage from '@/components/Cardimage.vue'
-
+ import Foot from '@/components/Foot.vue'
 
  export default{
 
   name:"home",
   components:{
-     CardImage
+     CardImage,Foot
   } 
 
  }
