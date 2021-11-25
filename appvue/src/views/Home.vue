@@ -99,12 +99,11 @@
               md:py-4 md:text-lg md:px-10
             "
           >
-          <router-link  to="/porfolio">Proyectos</router-link>
+            <router-link to="/porfolio">Proyectos</router-link>
           </a>
         </div>
         <div class="mt-3 sm:mt-0 sm:ml-3">
           <a
-            
             class="
               w-full
               flex
@@ -122,74 +121,15 @@
               md:py-4 md:text-lg md:px-10
             "
           >
-          <router-link  to="/contact">Contacto</router-link>
+            <router-link to="/contact">Contacto</router-link>
           </a>
         </div>
       </div>
     </div>
 
-      <!--About me-->
-      <div class="text-3xl md:text-5xl font-extrabold mx-12">
-        <div class="flex flex-row justify-items-center items-center">
-          <span
-            class="
-              bg-clip-text
-              text-transparent
-              bg-gradient-to-r
-              from-green-400
-              to-blue-500
-            "
-            >Acerca de mi </span
-          ><img
-            class="mt-2 mx-3 w-8 sm:w-11"
-            src="../assets/icons/icons8-metal-music-48.png"
-          />
-        </div>
-
-        <p
-          class="
-            about
-            text-white text-base
-            mt-4
-            md:text-xl
-            text-justify
-            leading-normal
-          "
-        >
-          A muy temprana edad me empezó a llamar la atención programar . A los
-          15 años hacía scripts en Windows Xp y desmontaba ordenadores como
-          pasatiempo .Así descubrí que me gustaba programar y me especialicé
-          como desarrollador de aplicaciones web . Programar para mi es
-          divertirme y a la vez poder crear cosas asombrosas.
-        </p>
-      </div>
-
-      <!--Skills podriamos poner flex-wrap en el div-->
-      <div class="flex justify-between  items-center"> 
-        <div class="text-3xl md:text-5xl font-extrabold mx-11 mt-3">
-          <span
-            class="
-              bg-clip-text
-              text-transparent
-              bg-gradient-to-r
-              from-green-400
-              to-blue-500
-            "
-            >Habilidades
-          </span>
-          <ul class="list-disc list-inside m-12">
-            <li class="text-white">Autodidacta</li>
-            <li class="text-white">Creativo</li>
-            <li class="text-white">Responsable</li>
-            <li class="text-white">Productivo</li>
-          </ul>
-        </div>
-        <div class="mx-32">
-          <img src="../assets/icons/Creativity(1).gif" alt="" />
-        </div>
-      </div>
-   
-      <div class="text-center">
+    <!--About me-->
+    <div class="text-2xl md:text-3xl lg:text-5xl font-extrabold mx-12 mt-3">
+      <div class="flex flex-row justify-items-center items-center">
         <span
           class="
             bg-clip-text
@@ -197,49 +137,91 @@
             bg-gradient-to-r
             from-green-400
             to-blue-500
-            text-3xl
-            md:text-5xl
-            font-extrabold
-            mx-12
           "
-          > Conocimientos
-          
-        </span>
+          >Acerca de mi </span
+        ><img
+          class="mt-2 mx-3 w-8 sm:w-11"
+          src="../assets/icons/icons8-metal-music-48.png"
+        />
       </div>
-  
-    
+
+      <p
+        class="
+          about
+          text-white text-base
+          mt-4
+          md:text-xl
+          text-justify
+          leading-normal
+        "
+      >
+        A muy temprana edad me empezó a llamar la atención programar . A los 15
+        años hacía scripts en Windows Xp y desmontaba ordenadores como
+        pasatiempo .Así descubrí que me gustaba programar y me especialicé como
+        desarrollador de aplicaciones web . Programar para mi es divertirme y a
+        la vez poder crear cosas asombrosas.
+      </p>
+    </div>
+
+    <!--Skills podriamos poner flex-wrap en el div-->
+    <div class="flex justify-between items-center">
+      <div class="text-2xl md:text-3xl lg:text-5xl font-extrabold mx-12 mt-3">
+        <span
+          class="
+            bg-clip-text
+            text-transparent
+            bg-gradient-to-r
+            from-green-400
+            to-blue-500
+          "
+          >Habilidades
+        </span>
+        <ul class="list-disc list-inside m-12">
+          <li class="text-white">Autodidacta</li>
+          <li class="text-white">Creativo</li>
+          <li class="text-white">Responsable</li>
+          <li class="text-white">Productivo</li>
+        </ul>
+      </div>
+      <div class="mx-32 ">
+        <img class="w-full" src="../assets/icons/Creativity(1).gif" alt="" />
+      </div>
+    </div>
+
+    <div class="text-center">
+      <span
+        class="
+          bg-clip-text
+          text-transparent
+          bg-gradient-to-r
+          from-green-400
+          to-blue-500
+          text-2xl
+          md:text-3xl
+          lg:text-5xl
+          font-extrabold
+          mx-12
+        "
+      >
+        Conocimientos
+      </span>
+    </div>
+    <card-image />
+    <foot />
   </main>
-  <card-image/>
-  <foot/>
- 
-
-
- 
-    
-  
-
-
 </template>
 
 <script>
- 
- import CardImage from '@/components/Cardimage.vue'
- import Foot from '@/components/Foot.vue'
+import CardImage from "@/components/Cardimage.vue";
+import Foot from "@/components/Foot.vue";
 
- export default{
-
-  name:"home",
-  components:{
-     CardImage,Foot
-  } 
-
- }
-
- 
-
-
-
-
+export default {
+  name: "home",
+  components: {
+    CardImage,
+    Foot,
+  },
+};
 </script>
 
 <style scoped>
