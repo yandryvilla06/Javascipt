@@ -14,34 +14,28 @@
     >Proyectos</span>
   </div> -->
 
-  <div class="holder mx-auto w-10/12 grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
-   
-    <cardproyect/>
-
-
+  <div
+    class="
+      holder
+      mx-auto
+      w-10/12
+      grid
+      sm:grid-cols-3
+      md:grid-cols-3
+      lg:grid-cols-4
+    "
+  >
+    <cardproyect />
   </div>
-  
-
 </template>
 
-
 <script>
- 
- import Cardproyect from '@/components/Cardproyect.vue'
- 
- export default{
+import Cardproyect from "@/components/Cardproyect.vue";
 
-  name:"porfolio",
-  components:{
-    Cardproyect
-  } 
-
-}
-
- 
- 
- 
- 
- </script>
-
-
+export default {
+  name: "porfolio",
+  components: {
+    Cardproyect,
+  },
+};
+</script>

@@ -6,11 +6,7 @@ module.exports = {
   },
   variants: {
     extend: {
-
-      
-        animation: ['motion-safe'],
-      
-
+      animation: ["motion-safe"],
     },
   },
   plugins: [],

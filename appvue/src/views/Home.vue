@@ -183,7 +183,7 @@
           <li class="text-white">Productivo</li>
         </ul>
       </div>
-      <div class="mx-32 ">
+      <div class="mx-32">
         <img class="w-full" src="../assets/icons/Creativity(1).gif" alt="" />
       </div>
     </div>
